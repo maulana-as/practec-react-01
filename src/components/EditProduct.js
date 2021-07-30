@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import { FormErrors } from "../helpers/FormErrors";
 
 class Editproduct extends React.Component {
@@ -195,14 +194,14 @@ class Editproduct extends React.Component {
               required
             />
           </div>
-          <Button variant="primary">Update</Button>
-          <Button
-            variant="warning"
+          <button className="ui blue button">Update</button>
+          <button
+           className="ui yellow button"
             onClick={() => this.props.history.goBack()}
             style={{ marginLeft: "5px" }}
           >
             Back
-          </Button>
+          </button>
         </form>
       </div>
     );

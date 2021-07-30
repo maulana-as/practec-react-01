@@ -123,6 +123,7 @@ class AddProduct extends Component {
 
   render() {
     const { message, selectedFile, picture } = this.state;
+    console.log(picture, "<<picture");
     return (
       <div className="ui main">
         <h2>Tambahkan Produk</h2>
